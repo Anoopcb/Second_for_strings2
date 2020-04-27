@@ -1,0 +1,60 @@
+##Strip method
+name = "    Anoop     "
+
+dots = "........................"
+print(name +dots)
+print(name.lstrip()+dots)
+print(name.rstrip()+dots)
+print(name.strip()+dots)
+##if there is space between you variable, in that case strip method won't work please
+## to get rid off between space we must use replace() method
+
+
+name = "Anoop    Singh"
+
+print(name.replace(" ", ""))
+
+
+name, char = input("enter comma separated name and character : ").split(",")
+
+print(f"length of your name is {len(name)}")
+#print(f"character count : {name.lower().count(char.lower())}")
+
+print(f"character count : {name.strip().lower().count(char.strip().lower())}")
+
+
+string = "She is beautiful and she is good dancer"
+
+#Replace() method
+
+print(string.replace(" ", "_"))
+
+
+print(string.replace("is", "was", 2))
+
+##find() mehtod
+
+print(string.find("is", 6))
+
+
+##center() mehtos
+
+name = "Anoop"
+
+print(name.center(9, "*"))
+
+name = input("Enter you name please")
+
+print(name.center(len(name)+8, "#"))
+
+##Strings are immutable, means they can't be chaged or amend
+
+string = "string"
+print(string[1])
+
+## string can be manuplate but can't be amended
+##assignment operators
+
+name  = "Anoop"
+
+print(name +" Singh")
